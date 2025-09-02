@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soporte</title>
+  <link rel="stylesheet" href="soporte.css">
+  <link rel="icon" type="image/png" href="icono.png">
+  <script defer src="soporte.js"></script>
+</head>
+<body>
+  <!-- Video de fondo -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="fondovid/soportedetalles.mp4" type="video/mp4">
+  </video>
+
+  <!-- Mensaje de girar pantalla -->
+  <div id="rotate-message">
+    <p>Por favor gira tu dispositivo a <strong>horizontal</strong> 📱↔️</p>
+  </div>
+
+  <!-- Ventana de soporte -->
+  <div id="support-window" class="hidden">
+    <h1>Soporte del Juego</h1>
+    <p><strong>Creador Web:</strong> SpectraShadow</p>
+    <p><strong>Fecha de creación:</strong> 1 septiembre 2025</p>
+    <p><strong>Versión:</strong> 1.3</p>
+    <p><strong>Correo de soporte:</strong> <a href="mailto:lobogamer12086@gmail.com">lobogamer12086@gmail.com</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/573009555880" target="_blank">3009555880</a></p>
+    <p><strong>Servidor:</strong> Github</p>
+    <p><strong>Dispositivos:</strong>Celular)/Computadora/Mac</p>
+  </div>
+
+
+<!-- Audio (inicialmente pausado) -->
+<audio id="bg-music" loop>
+  <source src="music/soport.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Botón de música -->
+<button id="music-btn">▶ Música</button>

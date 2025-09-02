@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Goddesses' Whim</title>
+  <link rel="icon" type="image/png" href="icono.png">
+
+  <!-- Fuentes -->
+  <style>
+    @font-face {
+      font-family: "TitulosFuente";
+      src: url("titulosfuente.ttf") format("truetype");
+    }
+    @font-face {
+      font-family: "TextoFuente";
+      src: url("textofuente.ttf") format("truetype");
+    }
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Fondo de video -->
+<video autoplay muted loop playsinline id="bg-video">
+  <source src="fondovid/inicio.mp4" type="video/mp4">
+</video>
+
+  <!-- Aviso de girar -->
+  <div id="rotate-message">
+    <p>📱 Gira tu celular a horizontal para continuar</p>
+  </div>
+
+  <!-- Encabezado con navegación -->
+  <header>
+    <nav>
+      <button onclick="location.href='detalles.html'">Detalles</button>
+      <button onclick="location.href='soporte.html'">Soporte</button>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main id="main-content" class="hidden">
+    <h1 class="title">Goddesses' Whim</h1>
+    <p class="description">
+      Tú , el protagonista de esta historia, alguien con un gran corazón (y quizás algo más).<br><br>
+      Un día, impulsado por tu naturaleza bondadosa, das tu vida para salvar a otra persona, 
+      un acto que llama la atención de cierta Diosa...<br><br>
+      Ahora, con la oportunidad de volver a vivir en otro mundo…<br>
+      No estás dispuesto a dejar que las cosas sigan igual que antes.
+    </p>
+
+    <a href="https://ncrow.itch.io/goddessess-whim/download/eyJleHBpcmVzIjoxNzU2Nzg4OTQwLCJpZCI6MTMwNjYyNX0%3d.wJV5ufxNtwZWnCx0r267QmFuNwU%3d" target="_blank" class="download-btn">⬇ Descargar</a>
+  </main>
+
+  <!-- Música -->
+  <audio id="bg-music" src="music/inicio.mp3" loop></audio>
+  <button id="music-btn" class="hidden">▶ Música</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
