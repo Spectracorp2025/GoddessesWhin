@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalles del Juego</title>
+  <link rel="stylesheet" href="detalles.css">
+  <link rel="icon" type="image/png" href="icono.png">
+  <script defer src="detalles.js"></script>
+</head>
+<body>
+  <!-- Video de fondo -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="fondovid/soportedetalles.mp4" type="video/mp4">
+  </video>
+
+  <!-- Mensaje de girar pantalla -->
+  <div id="rotate-message">
+    <p>Por favor gira tu dispositivo a <strong>horizontal</strong> 📱↔️</p>
+  </div>
+
+  <!-- Ventana de detalles del juego -->
+  <div id="details-window" class="hidden">
+    <h1>Detalles del Juego</h1>
+    <p><strong>Nombre:</strong> Goddesse's Whim</p>
+    <p><strong>Versión Última:</strong> 0.4.3</p>
+    <p><strong>Creador:</strong> NCrow</p>
+    <p><strong>Estado:</strong> Activo</p>
+    <p><strong>Idiomas:</strong> Inglés y Español</p>
+    <p><strong>Contenido +18:</strong> Sí</p>
+    <p><strong>Peso de APK:</strong> 1.97 GB</p>
+    <p><strong>Versión Android:</strong> Todos</p>
+    <p><strong>Donaciones:</strong> <a href="https://www.patreon.com/NCroww" target="_blank">Patreon - NCrow</a></p>
+    <p><strong>Estado del Proyecto:</strong> En desarrollo</p>
+
+    <h2>Notas del Creador</h2>
+    <ul>
+      <li>Mientras yo esté viva, NUNCA habrá NTR.</li>
+      <li>¡Cada actualización se publica cada 2 o 3 meses para los usuarios, y una semana después para el público!</li>
+      <li>El juego aún está en desarrollo y cambia constantemente, por lo que la calidad visual de los eventos iniciales siempre será inferior a la de los actuales. Con cada nueva versión, se actualizan los eventos antiguos. ¡Gracias por jugar!</li>
+    </ul>
+  </div>
+
+  <!-- Audio (inicialmente pausado) -->
+<audio id="bg-music" loop>
+  <source src="music/detalles.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Botón de música -->
+<button id="music-btn">▶ Música</button>
